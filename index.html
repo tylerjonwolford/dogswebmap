@@ -19,6 +19,7 @@
         <title></title>
     </head>
     <body>
+        <h1>DOGS BREEDS AND THE SECRET CODE</h1>
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
@@ -129,15 +130,6 @@
                         <td colspan="2"><strong>animal_name</strong><br />' + (feature.properties['animal_name'] !== null ? autolinker.link(feature.properties['animal_name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['sex'] !== null ? autolinker.link(feature.properties['sex'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['age_years'] !== null ? autolinker.link(feature.properties['age_years'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['age_months'] !== null ? autolinker.link(feature.properties['age_months'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2"><strong>primary_color</strong><br />' + (feature.properties['primary_color'] !== null ? autolinker.link(feature.properties['primary_color'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -149,58 +141,7 @@
                     <tr>\
                         <td colspan="2">' + (feature.properties['secondary+breed'] !== null ? autolinker.link(feature.properties['secondary+breed'].toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['tag_no'] !== null ? autolinker.link(feature.properties['tag_no'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['vacc_date'] !== null ? autolinker.link(feature.properties['vacc_date'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['vacc_exp'] !== null ? autolinker.link(feature.properties['vacc_exp'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['last_name'] !== null ? autolinker.link(feature.properties['last_name'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['first_name'] !== null ? autolinker.link(feature.properties['first_name'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['street_num'] !== null ? autolinker.link(feature.properties['street_num'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['street_direction'] !== null ? autolinker.link(feature.properties['street_direction'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['street_name'] !== null ? autolinker.link(feature.properties['street_name'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['street_type'] !== null ? autolinker.link(feature.properties['street_type'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['address_concat'] !== null ? autolinker.link(feature.properties['address_concat'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['city'] !== null ? autolinker.link(feature.properties['city'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['state'] !== null ? autolinker.link(feature.properties['state'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['zip'] !== null ? autolinker.link(feature.properties['zip'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['longitude'] !== null ? autolinker.link(feature.properties['longitude'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['latitude'] !== null ? autolinker.link(feature.properties['latitude'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['code_qual1'] !== null ? autolinker.link(feature.properties['code_qual1'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['code_qual2'] !== null ? autolinker.link(feature.properties['code_qual2'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
+                    </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
